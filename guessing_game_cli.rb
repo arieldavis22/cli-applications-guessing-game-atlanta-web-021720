@@ -33,7 +33,7 @@ def run_guessing_game
     correct_guess
   elsif !player_guess == random_number
     wrong_guess(random_number)
-  # elsif player_guess == "exit"
-  #   end_game
+  elsif player_guess == "exit"
+    end_game
   end
 end
