@@ -31,9 +31,9 @@ def run_guessing_game
 
   if player_guess == random_number
     correct_guess
-  elsif !player_guess == random_number
-    wrong_guess(random_number)
-  elsif player_guess == "exit"
+  elsif player_guess === "exit"
     end_game
+  else
+    wrong_guess
   end
 end
