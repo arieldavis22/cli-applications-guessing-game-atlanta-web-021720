@@ -29,7 +29,7 @@ def run_guessing_game
   random_number = gen_number
   player_guess = guess_capture
 
-  if player_guess == random_number
+  if player_guess === random_number
     correct_guess
   elsif player_guess === "exit"
     end_game
