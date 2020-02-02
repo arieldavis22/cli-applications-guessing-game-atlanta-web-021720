@@ -34,6 +34,6 @@ def run_guessing_game
   elsif player_guess === "exit"
     end_game
   else
-    wrong_guess
+    wrong_guess(random_number)
   end
 end
