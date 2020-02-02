@@ -25,8 +25,8 @@ def end_game
 end
 
 def run_guessing_game
-  random_number = gen_number
   ask_guess
+  random_number = gen_number
   player_guess = guess_capture
 
   if player_guess == random_number
