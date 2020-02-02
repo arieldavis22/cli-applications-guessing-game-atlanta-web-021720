@@ -1,7 +1,7 @@
 # Code your solution here!
 require "pry"
 def gen_number
-  rand(1..6)
+  rand(6)+1
 end
 
 def ask_guess
