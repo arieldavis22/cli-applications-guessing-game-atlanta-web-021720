@@ -26,12 +26,12 @@ end
 
 def run_guessing_game
   ask_guess
-  random_number = gen_number
+  random_number = gen_number.to_s
   player_guess = guess_capture
 
   if player_guess === random_number
     correct_guess
-  elsif player_guess === "exit"
+  elsif player_guess.downcase === "exit"
     end_game
   else
     wrong_guess(random_number)
